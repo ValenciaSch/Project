@@ -1,0 +1,5 @@
+org\itstep\java\web\service\ShopDAO.class
+org\itstep\java\web\model\Man.class
+org\itstep\java\web\controller\ShopController.class
+org\itstep\java\web\model\Woman.class
+org\itstep\java\web\service\ShopService.class
