@@ -19,13 +19,14 @@ import org.springframework.security.core.userdetails.UserDetails;
 //@Entity
 //@Table(name="tb_user")
 public class User implements Serializable, UserDetails {
-    
-    static GrantedPermissionAuthority auth = new GrantedAuthority() {
+
+   static GrantedAuthority auth = new GrantedAuthority() {
         @Override
         public String getAuthority() {
             return "ROLE_USER";
         }
     };
+   
     private Integer Id;
     private String Name;
     private String Email;
@@ -36,15 +37,15 @@ public class User implements Serializable, UserDetails {
         this.Name = name;
         this.Email = email;
     }
-    
+
     public User(String name) {
         this.Name = name;
     }
-    
+
     public User() {
-        
+
     }
-    
+
     public boolean isBanned() {
         return banned;
     }
@@ -52,7 +53,7 @@ public class User implements Serializable, UserDetails {
     void setBanned(boolean banned) {
         this.banned = banned;
     }
-    
+
     public String getName() {
         return Name;
     }
@@ -108,5 +109,5 @@ public class User implements Serializable, UserDetails {
     public boolean isEnabled() {
         return true;
     }
-    
+
 }

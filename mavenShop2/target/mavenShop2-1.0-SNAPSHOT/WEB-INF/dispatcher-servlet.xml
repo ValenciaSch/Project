@@ -29,7 +29,8 @@
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" />
     
- <context:component-scan base-package="org.itstep.java.web.controller" />
+   <context:component-scan base-package="org.itstep.java.web.controller" />
+   <context:component-scan base-package="org.itstep.java.web.model" />
     <!--
     The index controller.
     -->
